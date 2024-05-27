@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Zviel Koren | Website",
+    "base_url": "/",
+    "favicon": "/images/favicon.ico"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "profile": {
+    "name": "Zviel Koren",
+    "image": "/images/developer.png",
+    "designation": "developer",
+    "bio": "A Full Stack Front-end Developer based in New York. Meticulous web developer with over 2 years of front end experience and passion for responsive and mobile-first website design."
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "tag_manager_id": "",
+    "copyright": "Copyright © 2024 a theme by [zvielkoren](zvielkoren.github.io)"
+  },
+
+  "metadata": {
+    "meta_author": "zvielkoren",
+    "meta_image": "/images/favicon.ico",
+    "meta_description": "zvielkoren developers"
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template"
+  }
+}
