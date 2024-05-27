@@ -23,7 +23,7 @@
     "react-grid-gallery": "^1.0.0",
     "react-gtm-module": "^2.0.11",
     "react-icons": "^4.7.1",
-    "react-image-lightbox": "^5.1.5",
+    "react-image-lightbox": "^5.1.1",
     "react-lite-youtube-embed": "^2.3.52",
     "react-syntax-highlighter": "^15.5.0",
     "rehype-slug": "^5.1.0",
@@ -45,11 +45,5 @@
     "sharp": "^0.31.2",
     "tailwind-bootstrap-grid": "^5.0.1",
     "tailwindcss": "^3.2.4"
-  },
-  "overrides": {
-    "next-mdx-remote/react": "^18.2.0",
-    "next-mdx-remote/react-dom": "^18.2.0",
-    "react-image-lightbox/react": "^18.2.0",
-    "react-image-lightbox/react-dom": "^18.2.0"
   }
 }
