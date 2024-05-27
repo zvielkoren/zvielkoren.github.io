@@ -26,3 +26,11 @@ jobs:
         with:
           name: production-build
           path: out  # Replace with your output directory if differe
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest  # Adjust based on your deployment environment
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: production-build
+          path: out  # Replace with your output directory if different
