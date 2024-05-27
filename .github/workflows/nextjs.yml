@@ -1,4 +1,4 @@
-name: Build and Deploy
+ame: Build and Deploy to GitHub Pages
 
 on:
   push:
@@ -16,25 +16,13 @@ jobs:
           node-version: 18  # Adjust based on your project's requirements
 
       - name: Install dependencies
-        run: npm install --force
+        run: npm install --force  # Consider using npm ci for deterministic installs
 
       - name: Build the project
         run: npm run build
 
-      - name: Deploy (replace with your deployment strategy)
+      - name: Upload artifact (optional)
         uses: actions/upload-artifact@v3
         with:
           name: production-build
-          path: out  # Replace with your output directory if different
-
-  deploy:
-        needs: build
-        runs-on: ubuntu-latest  # Adjust based on your deployment environment
-        steps:
-          - uses: actions/download-artifact@v3
-            with:
-              name: production-build
-              path: out  # Replace with your output directory if different
-      
-          # Replace these steps with your deployment commands (e.g., SCP, AWS S3 upload)
-          - run: scp -r out/* your-username@your-server.com:/path/to/deployment/directory
+          path: out  # Replace with your output directory if differe
