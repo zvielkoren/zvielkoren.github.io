@@ -27,15 +27,14 @@ jobs:
           name: production-build
           path: out  # Replace with your output directory if different
 
-  # Optional: Deploy to a production environment (replace with your deployment steps)
-  # deploy:
-  #   needs: build
-  #   runs-on: ubuntu-latest  # Adjust based on your deployment environment
-  #   steps:
-  #     - uses: actions/download-artifact@v3
-  #       with:
-  #         name: production-build
-  #         path: out  # Replace with your output directory if different
-  #
-  #     # Replace these steps with your deployment commands (e.g., SCP, AWS S3 upload)
-  #     - run: scp -r out/* your-username@your-server.com:/path/to/deployment/directory
+  deploy:
+        needs: build
+        runs-on: ubuntu-latest  # Adjust based on your deployment environment
+        steps:
+          - uses: actions/download-artifact@v3
+            with:
+              name: production-build
+              path: out  # Replace with your output directory if different
+      
+          # Replace these steps with your deployment commands (e.g., SCP, AWS S3 upload)
+          - run: scp -r out/* your-username@your-server.com:/path/to/deployment/directory
