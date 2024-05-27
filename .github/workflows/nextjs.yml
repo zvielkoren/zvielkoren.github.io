@@ -16,7 +16,7 @@ jobs:
           node-version: 18  # Adjust based on your project's requirements
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install --force
 
       - name: Build the project
         run: npm run build
